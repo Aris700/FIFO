@@ -1,5 +1,5 @@
 `timescale 1ns/1ps
-
+`include "sync_fifo.v"
 module testbench();
   reg clk_i, rst_n_i, write_en_i, read_en_i;
   reg [15:0] data_in_i;
