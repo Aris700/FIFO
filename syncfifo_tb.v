@@ -8,7 +8,7 @@ module testbench();
   wire [15:0] data_out_o;
 
   // Instantiate the FIFO module
-  Sync_FIFO S1(clk_i, rst_n_i, write_en_i, read_en_i, data_in_i, data_out_o, fifo_full_o, fifo_empty_o);
+  synchronous_fifo S1(clk_i, rst_n_i, write_en_i, read_en_i, data_in_i, data_out_o, fifo_full_o, fifo_empty_o);
 
   // Clock generation
   always #2 clk_i = ~clk_i;
