@@ -1,5 +1,5 @@
 `timescale 1ns/10ps
-`include "asyn_fifo.v"
+`include "asyn_FIFO.v"
 module asynchronous_fifo_tb ();
 
 parameter addr_width = 4;
